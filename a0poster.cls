@@ -1,0 +1,1 @@
+packages/a0poster/a0poster.cls
