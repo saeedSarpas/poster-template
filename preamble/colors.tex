@@ -1,0 +1,103 @@
+\usepackage{xcolor,colortbl}
+
+% Palettes from: https://betterfigures.org/2015/06/23/picking-a-colour-scale-for-scientific-graphics/
+% Greys:
+\definecolor{grey0}{rgb}{1.0,1.0,1.0} % White
+\definecolor{grey1}{rgb}{0.94,0.94,0.94}
+\definecolor{grey2}{rgb}{0.85,0.85,0.85}
+\definecolor{grey3}{rgb}{0.74,0.74,0.74}
+\definecolor{grey4}{rgb}{0.59,0.59,0.59}
+\definecolor{grey5}{rgb}{0.45,0.45,0.45}
+\definecolor{grey6}{rgb}{0.32,0.32,0.32}
+\definecolor{grey7}{rgb}{0.15,0.15,0.15}
+\definecolor{grey8}{rgb}{0.0,0.0,0.0} % Black
+
+% Blues:
+\definecolor{blue0}{rgb}{0.97,0.98,1.0}
+\definecolor{blue1}{rgb}{0.87,0.93,0.97}
+\definecolor{blue2}{rgb}{0.78,0.86,0.94}
+\definecolor{blue3}{rgb}{0.62,0.79,0.88}
+\definecolor{blue4}{rgb}{0.42,0.68,0.84}
+\definecolor{blue5}{rgb}{0.26,0.57,0.78}
+\definecolor{blue6}{rgb}{0.13,0.44,0.71}
+\definecolor{blue7}{rgb}{0.03,0.32,0.61}
+\definecolor{blue8}{rgb}{0.03,0.19,0.42}
+
+% Yellow-Green-Blue:
+\definecolor{YlGnBu0}{rgb}{1.0,1.0,0.85}
+\definecolor{YlGnBu1}{rgb}{0.93,0.98,0.69}
+\definecolor{YlGnBu2}{rgb}{0.78,0.91,0.71}
+\definecolor{YlGnBu3}{rgb}{0.50,0.80,0.73}
+\definecolor{YlGnBu4}{rgb}{0.25,0.71,0.77}
+\definecolor{YlGnBu5}{rgb}{0.11,0.57,0.75}
+\definecolor{YlGnBu6}{rgb}{0.13,0.37,0.66}
+\definecolor{YlGnBu7}{rgb}{0.15,0.20,0.58}
+\definecolor{YlGnBu8}{rgb}{0.03,0.11,0.35}
+
+% Yellow-Orange-Red:
+\definecolor{YlOrRd0}{rgb}{1.0,1.0,0.8}
+\definecolor{YlOrRd1}{rgb}{1.0,0.93,0.63}
+\definecolor{YlOrRd2}{rgb}{1.0,0.85,0.46}
+\definecolor{YlOrRd3}{rgb}{1.0,0.70,0.30}
+\definecolor{YlOrRd4}{rgb}{0.99,0.55,0.24}
+\definecolor{YlOrRd5}{rgb}{0.99,0.31,0.16}
+\definecolor{YlOrRd6}{rgb}{0.89,0.10,0.11}
+\definecolor{YlOrRd7}{rgb}{0.74,0.0,0.15}
+\definecolor{YlOrRd8}{rgb}{0.50,0.0,0.15}
+
+% Palettes from: https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/
+% 1:
+\definecolor{RoseBud}{rgb}{0.98,0.70,0.58}
+\definecolor{Froly}{rgb}{0.95,0.45,0.50}
+\definecolor{TurkishRose}{rgb}{0.76,0.42,0.53}
+\definecolor{Smoky}{rgb}{0.43,0.36,0.49}
+\definecolor{Ming}{rgb}{0.20,0.36,0.49}
+
+% 2:
+\definecolor{Norway}{rgb}{0.60,0.73,0.60}
+\definecolor{Flesh}{rgb}{0.99,0.81,0.67}
+\definecolor{VividTangerine}{rgb}{0.96,0.51,0.49}
+\definecolor{Mandy}{rgb}{0.92,0.29,0.38}
+\definecolor{OuterSpace}{rgb}{0.15,0.21,0.23}
+
+% 3:
+\definecolor{Padua}{rgb}{0.68,0.86,0.78}
+\definecolor{ChromeWhite}{rgb}{0.86,0.93,0.76}
+\definecolor{Romantic}{rgb}{1.0,0.82,0.71}
+\definecolor{CornflowerLilac}{rgb}{0.97,0.65,0.65}
+\definecolor{PinkSalmon}{rgb}{0.96,0.54,0.58}
+
+% 4:
+\definecolor{SilverChalice}{rgb}{0.66,0.65,0.66}
+\definecolor{Mulberry}{rgb}{0.80,0.33,0.49}
+\definecolor{Amaranth1}{rgb}{0.92,0.09,0.37}
+\definecolor{Tundora}{rgb}{0.29,0.29,0.29}
+\definecolor{MineShaft}{rgb}{0.21,0.21,0.21}
+
+% 5:
+\definecolor{Hibiscus}{rgb}{0.66,0.13,0.42}
+\definecolor{Amaranth2}{rgb}{0.92,0.11,0.30}
+\definecolor{Flamingo}{rgb}{0.95,0.42,0.27}
+\definecolor{EnergyYellow}{rgb}{0.96,0.86,0.41}
+\definecolor{Lochinvar}{rgb}{0.18,0.59,0.60}
+
+% 6:
+\definecolor{Tusk}{rgb}{0.88,0.93,0.76}
+\definecolor{Manz}{rgb}{0.93,0.90,0.45}
+\definecolor{Candlelight}{rgb}{0.97,0.83,0.13}
+\definecolor{NeonCarrot}{rgb}{0.96,0.56,0.24}
+\definecolor{SunsetOrange}{rgb}{0.94,0.31,0.33}
+
+% 7:
+\definecolor{Mimosa}{rgb}{0.90,0.94,0.76}
+\definecolor{Chinook}{rgb}{0.64,0.84,0.67}
+\definecolor{Keppel}{rgb}{0.23,0.69,0.66}
+\definecolor{CuttySark}{rgb}{0.33,0.49,0.51}
+\definecolor{DonJuan}{rgb}{0.36,0.32,0.31}
+
+% 8:
+\definecolor{RadicalRed}{rgb}{0.94,0.27,0.40}
+\definecolor{SweetPink}{rgb}{0.96,0.61,0.60}
+\definecolor{ApricotPeach}{rgb}{0.98,0.81,0.68}
+\definecolor{ThistleGreen}{rgb}{0.78,0.78,0.67}
+\definecolor{Acapulco}{rgb}{0.52,0.61,0.61}

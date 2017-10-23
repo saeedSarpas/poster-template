@@ -1,4 +1,21 @@
 \documentclass[portrait,a0,final]{a0poster}
+
+\input{preamble/preamble}
+
 \begin{document}
-Write poster here
+
+\begingroup\setlength{\fboxsep}{0pt}
+\colorbox{DonJuan}{
+    \begin{tabular}{L{0.29\linewidth} L{0.69\linewidth}}
+      \includegraphics[width=5cm]{eth_logo.png} & {\color{grey0} Header} \\[10ex]
+    \end{tabular}
+}\endgroup
+
+\begin{minipage}{0.49\linewidth}
+First column
+\end{minipage}
+\begin{minipage}{0.49\linewidth}
+Second column
+\end{minipage}
+
 \end{document}

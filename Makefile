@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-LATEX := pdflatex
+LATEX := lualatex
 LATEXFILE := poster-template.tex
 
 
