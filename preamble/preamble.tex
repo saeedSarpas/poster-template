@@ -41,7 +41,7 @@
 
 % Line control (spacing, ...)
 \usepackage{setspace}
-\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\baselinestretch}{1.1}
 
 % Boxes
 \usepackage{adjustbox}
@@ -50,3 +50,20 @@
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
 \newcommand{\wtxt}[1]{{\color{grey0} #1}} % White text
+
+% New environments
+\renewenvironment{section}[2]
+{
+\vspace{2cm}
+\begin{center}
+  \begin{adjustbox}{minipage=\textwidth,center,bgcolor=grey1,trim=0cm 0cm 0cm -0.5cm}
+    \vspace{-2.5cm}\hspace{0.5cm}\includegraphics[width=35mm]{#1}
+    {\large \textbf{#2}}
+
+    \begin{adjustbox}{minipage=0.92\textwidth,left,margin=0.04\textwidth}
+}
+{
+    \end{adjustbox}
+  \end{adjustbox}
+\end{center}
+}
