@@ -25,6 +25,9 @@
   bottom=20mm
 }
 
+% PS line and shape drawing
+\usepackage{tikz}
+
 % Array package
 \usepackage{array}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -52,6 +55,7 @@
 \newcommand{\wtxt}[1]{{\color{grey0} #1}} % White text
 
 % New environments
+% Section: section{picture}{title}
 \renewenvironment{section}[2]
 {
 \vspace{2cm}
@@ -64,6 +68,20 @@
 }
 {
     \end{adjustbox}
+  \end{adjustbox}
+\end{center}
+}
+
+% General box: gbox{Guide Char}{Color}
+\newenvironment{gbox}[2]
+{
+\vspace{2cm}
+\begin{center}
+  \begin{adjustbox}{minipage=\textwidth,center,bgcolor=#2,trim=-0.7cm}
+    \vspace{-2.5cm}\hspace{0.5cm}\tikz\draw[#2,fill=#2]
+    (-2.5cm,0.5cm) circle (1.75cm) node[white] {#1};
+}
+{
   \end{adjustbox}
 \end{center}
 }
