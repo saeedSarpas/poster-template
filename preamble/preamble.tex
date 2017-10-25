@@ -76,15 +76,23 @@
 }
 
 % General box: gbox{Guide Char}{Color}
-\newenvironment{gbox}[2]
+\newenvironment{gbox}[3]
 {
 \vspace{2cm}
 \begin{center}
   \begin{adjustbox}{minipage=\textwidth,center,bgcolor=#2,trim=-0.7cm}
     \vspace{-2.5cm}\hspace{0.5cm}\tikz\draw[#2,fill=#2]
     (-2.5cm,0.5cm) circle (1.75cm) node[white] {#1};
+    #3
+
+    \def\temp{#3}\ifx\temp\empty
+      \vspace{-1cm}
+    \fi
+    \begin{adjustbox}{minipage=0.92\textwidth,valign=T,raise=\strutheight,left,
+    margin=0.04\textwidth 0pt}
 }
 {
+    \end{adjustbox}
   \end{adjustbox}
 \end{center}
 }
