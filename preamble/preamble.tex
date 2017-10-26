@@ -56,16 +56,18 @@
 \newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
 \newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
 \newcommand{\wtxt}[1]{{\color{grey0} #1}} % White text
+\newcommand{\gtxt}[1]{{\color{grey6} #1}}
 
 % New environments
-% Section: section{picture}{title}
-\renewenvironment{section}[2]
+% Section: section{picture}{title}{subtitle}
+\renewenvironment{section}[3]
 {
 \vspace{2cm}
 \begin{center}
   \begin{adjustbox}{minipage=\textwidth,center,bgcolor=grey1,trim=0cm 0cm 0cm -0.5cm}
     \vspace{-2.5cm}\hspace{0.5cm}\includegraphics[width=35mm]{#1}
-    {\large \textbf{#2}}
+    {\large \textbf{#2}}\\
+    \hspace*{4.5cm}{\small \textit{#3}}
 
     \begin{adjustbox}{minipage=0.92\textwidth,valign=T,raise=\strutheight,left,margin=0.04\textwidth}
 }
@@ -75,7 +77,7 @@
 \end{center}
 }
 
-% General box: gbox{Guide Char}{Color}
+% General box: gbox{Guide Char}{Color}{title}
 \newenvironment{gbox}[3]
 {
 \vspace{2cm}
@@ -86,13 +88,13 @@
     #3
 
     \def\temp{#3}\ifx\temp\empty
-      \vspace{-1cm}
+      \vspace{-1.7cm}
     \fi
-    \begin{adjustbox}{minipage=0.92\textwidth,valign=T,raise=\strutheight,left,
-    margin=0.04\textwidth 0pt}
+    \begin{adjustbox}{minipage=0.92\textwidth,valign=T,raise=\strutheight,center}
 }
 {
     \end{adjustbox}
+    \vspace{0.3cm}
   \end{adjustbox}
 \end{center}
 }
