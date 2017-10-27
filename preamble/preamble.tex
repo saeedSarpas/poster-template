@@ -83,8 +83,11 @@
 \vspace{2cm}
 \begin{center}
   \begin{adjustbox}{minipage=\textwidth,center,bgcolor=#2,trim=-0.7cm}
-    \vspace{-2.5cm}\hspace{0.5cm}\tikz\draw[#2,fill=#2]
-    (-2.5cm,0.5cm) circle (1.75cm) node[white] {#1};
+    \def\temp{#1}\ifx\temp\empty
+    \else
+      \vspace{-2.5cm}\hspace{0.5cm}\tikz\draw[#2,fill=#2]
+      (-2.5cm,0.5cm) circle (1.75cm) node[white] {#1};
+    \fi
     #3
 
     \def\temp{#3}\ifx\temp\empty
